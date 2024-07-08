@@ -1,0 +1,15 @@
+.container {
+  height: 86px;
+
+  .column {
+    display: flex;
+
+    .register-button {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 15px;
+    }
+  }
+}
