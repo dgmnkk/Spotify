@@ -1,36 +1,16 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { MessageContext } from "../../contexts/message.context";
-import "./signup.scss";
+import { Grid } from "@mui/material";
+import "./sign-up.scss";
+import React from "react";
 
 export default function SignUp() {
-  const { isMessage, switchMessage } = useContext(MessageContext);
-
   return (
-    <>
-      {isMessage ? (
-        <div className="container">
-          <div className="text">
-            <span className="title">Пробне використання Spotify</span>
-            <span className="desc">
-              Зареєструйся, щоб слухати пісні й подкасти без обмежень. Іноді ми
-              будемо показувати рекламу. Додавати кредитно карту не потрібно.
-            </span>
-          </div>
-          <Link to="register" className="link">
-            <button
-              className="register-button"
-              onClick={() => {
-                switchMessage(false);
-              }}
-            >
-              Зареєструватися безкоштовно
-            </button>
-          </Link>
-        </div>
-      ) : (
-        <></>
-      )}
-    </>
+    <Grid container spacing={2} columns={16} className="container">
+      <Grid item xs={8} className="column">
+        <button className="register-button">xs=8</button>
+      </Grid>
+      <Grid item xs={8} className="column">
+        <button className="item">xs=8</button>
+      </Grid>
+    </Grid>
   );
 }

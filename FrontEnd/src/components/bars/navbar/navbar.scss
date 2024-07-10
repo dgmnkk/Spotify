@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 10px;
+  background-color: var(--background-sec);
+
+  .history {
+    button {
+      height: 32px;
+      width: 32px;
+      font-size: 18px;
+      text-align: center;
+      color: lightgray;
+      background-color: var(--background-sec);
+      border: none;
+      border-radius: 30px;
+      margin-right: 5px;
+      transition: 0.1s;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    button {
+      font-size: 14px;
+      font-weight: bold;
+      padding: 12px 32px;
+      border: none;
+      background-color: transparent;
+      transition: 0.1s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &.signup {
+        color: lightgray;
+        transition: 0.2s;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      &.white {
+        color: black;
+        background-color: white;
+        border-radius: 30px;
+      }
+
+      &.transperent {
+        color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+      }
+    }
+
+    .userAvatar {
+      border-radius: 30px;
+      object-fit: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+        border-radius: 30px;
+      }
+    }
+  }
+}
