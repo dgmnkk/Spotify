@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e8014a-4b8d-4912-8793-27e29f931a70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/Icons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/SingerCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/SongCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/TitleBox.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/ArtistDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/layout/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main-page" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +45,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main-page",
+    "git-widget-placeholder": "artistdetails-page",
     "last_opened_file_path": "D:/User/Documents/WebStormProjects/Spotify",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
