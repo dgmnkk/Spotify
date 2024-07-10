@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e8014a-4b8d-4912-8793-27e29f931a70" name="Changes" comment="merge initial project structure from headers to main" />
+    <list default="true" id="e2e8014a-4b8d-4912-8793-27e29f931a70" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/Icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/SingerCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/SongCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/TitleBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/layout/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/index.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,21 +30,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dgmnkk"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dgmnkk&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dgmnkk/Spotify.git",
-    "accountId": "86da6436-ba5d-44ae-9b9e-eaf1f4b413dc"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dgmnkk/Spotify.git&quot;,
+    &quot;accountId&quot;: &quot;86da6436-ba5d-44ae-9b9e-eaf1f4b413dc&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2ixrRTx8FBY4buzzjHMnbS0XPt2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,12 +53,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main-page",
     "last_opened_file_path": "D:/User/Documents/WebStormProjects/Spotify",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,6 +97,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge initial project structure from headers to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge initial project structure from headers to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
