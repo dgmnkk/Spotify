@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e8014a-4b8d-4912-8793-27e29f931a70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/ArtistDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/AlbumDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/SongListItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/SongsList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/ArtistDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/ArtistDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/SingerCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/SingerCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "artistdetails-page",
+    "git-widget-placeholder": "album-details-page",
     "last_opened_file_path": "D:/User/Documents/WebStormProjects/Spotify",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720444768944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ArtistDetails page done">
+      <option name="closed" value="true" />
+      <created>1720638618097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720638618097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge initial project structure from headers to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="ArtistDetails page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="ArtistDetails page done" />
   </component>
 </project>
