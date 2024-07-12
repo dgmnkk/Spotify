@@ -2,6 +2,7 @@
   flex-grow: 1;
   display: flex;
   align-items: center;
+  height: 70px;
   justify-content: space-between;
   margin: 10px;
   padding: 0px 10px;
@@ -10,6 +11,7 @@
 
   .history {
     button {
+      align-items: center;
       height: 32px;
       width: 32px;
       font-size: 18px;
@@ -20,6 +22,7 @@
       border-radius: 30px;
       margin-right: 5px;
       transition: 0.1s;
+      align-self: center;
       cursor: pointer;
 
       &:hover {

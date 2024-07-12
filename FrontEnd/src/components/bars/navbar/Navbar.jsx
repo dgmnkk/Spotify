@@ -4,7 +4,7 @@ import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
 import "./navbar.scss";
 
 export default function Navbar() {
-  const isAuth = true;
+  const isAuth = false;
   const navigate = useNavigate();
   const back = "<";
   const forward = ">";
