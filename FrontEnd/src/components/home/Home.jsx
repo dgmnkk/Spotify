@@ -5,7 +5,7 @@ import SingerCard from "../SingerCard";
 import TitleBox from "../TitleBox";
 
 export default function Home() {
-  const items = [
+  const songs = [
     {
       id: 1,
       title: 'Blinding Lights',
@@ -114,15 +114,15 @@ export default function Home() {
       <div className="bg-backcolor m-6">
         <TitleBox title="Popular Songs" link='/' />
         <div className='grid grid-cols-5 gap-x-6 mb-8'>
-          {items.map(item => <SongCard item={item} link='/' key={item.id}/>)}
+          {songs.map(item => <SongCard item={item} link={`/songs/${item.id}`} key={item.id}/>)}
         </div>
         <TitleBox title="Your Daily Mixes" link='/' />
         <div className='grid grid-cols-5 gap-x-6 mb-8'>
-          {mixes.map(item => <SongCard item={item} link='/' key={item.id}/>)}
+          {mixes.map(item => <SongCard item={item} link={`/albums/${item.id}`} key={item.id}/>)}
         </div>
         <TitleBox title="Popular Artists" link='/' />
         <div className='grid grid-cols-5 gap-x-6 mb-8'>
-          {singers.map(item => <SingerCard item={item} link='/' key={item.id}/>)}
+          {singers.map(item => <SingerCard artist={item} key={item.id}/>)}
         </div>
       </div>
   )

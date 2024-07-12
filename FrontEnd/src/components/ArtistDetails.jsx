@@ -1,6 +1,8 @@
 import React from 'react';
 import TitleBox from "./TitleBox";
 import SongCard from "./SongCard";
+import {Link} from "react-router-dom";
+import {Icon} from "./Icons";
 
 export default function ArtistDetails() {
     const artist = {
@@ -80,15 +82,15 @@ export default function ArtistDetails() {
     return (
         <div>
             <div>
-                <img src={artist.image} className="w-full h-96 object-cover" />
-                <h1 className="relative bottom-40 ml-10 text-8xl text-white font-bold  tracking-tight">{artist.name}</h1>
+                <img src={artist.image} className="w-full h-96 object-cover"/>
+                <h1 className="relative bottom-40 ml-10 text-8xl text-white font-bold tracking-tight">{artist.name}</h1>
             </div>
             <div className="m-10 relative bottom-20">
-                <TitleBox title="Songs" link='/' />
+                <TitleBox title="Songs" link='/'/>
                 <div className='grid grid-cols-5 gap-x-6 mb-8'>
                     {songs.map(item => <SongCard item={item} link='/' key={item.id}/>)}
                 </div>
-                <TitleBox title="Albums" link='/' />
+                <TitleBox title="Albums" link='/'/>
                 <div className='grid grid-cols-5 gap-x-6 mb-8'>
                     {albums.map(item => <SongCard item={item} link='/' key={item.id}/>)}
                 </div>

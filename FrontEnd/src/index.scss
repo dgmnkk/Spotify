@@ -10,7 +10,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  background-color: var(--backcolor);
+  background-color: #121212;
   color: white;
 }
 
@@ -22,7 +22,7 @@ code {
 #root {
   display: flex;
   flex-direction: column;
-  background-color: var(--backcolor);
+  background-color: #121212;
 }
 
 .wrapper {
