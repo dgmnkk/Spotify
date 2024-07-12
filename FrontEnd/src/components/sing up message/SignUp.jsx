@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import "./sign-up.scss";
+import "./signup.scss";
 import React from "react";
 
 export default function SignUp() {
