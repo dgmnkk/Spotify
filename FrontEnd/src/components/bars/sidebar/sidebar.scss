@@ -1,7 +1,15 @@
-.container {
-  color: white;
+.sidebar {
+  margin: 10px;
+  height: 70px;
+  width: 400px;
+  border-radius: 7px;
+  background-color: var(--background-sec);
 
-  .icon {
-    color: white;
+  img {
+    height: 80px;
+    width: 120px;
+    margin-top: -5px;
+    overflow: hidden;
+
   }
 }

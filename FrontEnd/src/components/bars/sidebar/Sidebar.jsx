@@ -1,13 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Icons } from "../../Icons";
+import logo from '../../../assets/ico-text.svg';
 import "./sidebar.scss";
 
 export default function Sidebar() {
-  const logo = "./ico-text.svg";
-
   return (
     <>
-      <div className="container">
-        <img src={logo} alt="logo" />
+      <div className="sidebar">
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+        <Link to="/">
+          <Icons name="home" />
+        </Link>
       </div>
     </>
   );

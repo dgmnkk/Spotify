@@ -13,7 +13,7 @@ export default function Navbar() {
     "https://i.scdn.co/image/ab67757000003b82368223ebc3bb84b274fc8365";
 
   return (
-    <div className="container">
+    <div className="navbar">
       <div className="history">
         <button
           className="back"

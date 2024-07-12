@@ -7,7 +7,7 @@ import Sidebar from "../bars/sidebar/Sidebar";
 
 export default function Layout() {
   return (
-    <div className="bg-backcolor container">
+    <div className="layout">
       <Sidebar />
       <Navbar />
       {/* <Outlet /> */}
