@@ -4,11 +4,15 @@ import "./layout.scss";
 // import { Outlet } from "react-router-dom";
 import Navbar from "../bars/navbar/Navbar";
 import Sidebar from "../bars/sidebar/Sidebar";
+import Library from "../bars/sidebar/Library";
 
 export default function Layout() {
   return (
     <div className="layout">
-      <Sidebar />
+      <div className="sidebar-container">
+        <Sidebar />
+        <Library />
+      </div>
       <Navbar />
       {/* <Outlet /> */}
     </div>

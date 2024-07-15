@@ -1,13 +1,12 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
+import { Icon } from "../../Icons";
 import "./navbar.scss";
 
 export default function Navbar() {
   const isAuth = false;
   const navigate = useNavigate();
-  const back = "<";
-  const forward = ">";
 
   const userAvatarUrl =
     "https://i.scdn.co/image/ab67757000003b82368223ebc3bb84b274fc8365";
@@ -21,7 +20,7 @@ export default function Navbar() {
             navigate(-1);
           }}
         >
-          {back}
+          <Icon name="back" />
         </button>
         <button
           className="forward"
@@ -29,7 +28,7 @@ export default function Navbar() {
             navigate(1);
           }}
         >
-          {forward}
+          <Icon name="next" />
         </button>
       </div>
 
