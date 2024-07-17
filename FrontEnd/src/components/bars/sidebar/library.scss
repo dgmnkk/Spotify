@@ -1,3 +1,19 @@
 .library {
-  margin: 10px 0px 0px 10px;
+  flex-grow: 1;
+  padding: 20px;
+  margin: 10px 0px 10px 10px;
+  border-radius: 7px;
+  background-color: var(--background-sec);
+  color: lightgray;
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+
+    .icon {
+      margin-right: 20px;
+    }
+  }
 }
