@@ -111,7 +111,7 @@ export default function Home() {
 
 
   return(
-      <div className="bg-backcolor m-6">
+      <div className="bg-backcolor home">
         <TitleBox title="Popular Songs" link='/' />
         <div className='grid grid-cols-5 gap-x-6 mb-8'>
           {songs.map(item => <SongCard item={item} link={`/songs/${item.id}`} key={item.id}/>)}
