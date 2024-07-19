@@ -7,6 +7,8 @@ import Library from "../bars/sidebar/Library";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
+  const isAuth = true;
+
   return (
     <>
       {isAuth ? (
