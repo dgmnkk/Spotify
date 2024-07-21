@@ -1,9 +1,15 @@
 .register {
-  display: flex;
-  flex-direction: column;
   background-color: var(--background-sec);
   height: 100vh;
   padding: 30px;
+
+  .reg-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   img {
     height: 40px;
@@ -12,13 +18,114 @@
     margin-left: auto;
   }
 
-  div {
+  .title {
     margin-top: 20px;
     font-size: 40px;
-    width: 400px;
     text-align: center;
     font-weight: bold;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .email-text {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .email-input {
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 44px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    transition: 0.15s;
+
+    &:hover {
+      border: 1px solid lightgray;
+    }
+
+    &::placeholder {
+      color: gray;
+    }
+  }
+
+  .btn {
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.2s;
+  }
+
+  .next {
+    color: black;
+    background-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--accent-color-lighter);
+    }
+  }
+
+  .upper-sep {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &::before {
+      content: " ";
+      height: 1px;
+      background-color: #727272;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+    }
+
+    .abs {
+      background-color: var(--background-sec);
+      padding: 0 12px;
+      position: relative;
+      display: inline-block;
+    }
+  }
+
+  .other {
+    display: flex;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+
+    .text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+
+  .separator {
+    margin-top: 20px;
+    border-color: #292929;
+  }
+
+  .or {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .text {
+      color: lightgray;
+      margin-right: 5px;
+    }
+
+    .href {
+      text-decoration: underline;
+    }
   }
 }

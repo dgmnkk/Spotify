@@ -10,7 +10,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  background-color: black;
+  background-color: var(--background-sec);
   color: white;
 }
 
@@ -33,4 +33,6 @@ code {
 :root {
   --background-main: #000;
   --background-sec: #121212;
+  --accent-color: #1ed760;
+  --accent-color-lighter: #1fdf64;
 }
