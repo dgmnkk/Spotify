@@ -27,11 +27,11 @@ export default function Register() {
         <div className="upper-sep">
           <span className="abs">or</span>
         </div>
-        <Link to="/register/google" className="btn other">
+        <Link to="/login/google" className="btn other">
           <GoogleIcon />
           <span className="text">Authorize via Google</span>
         </Link>        
-        <Link to="/register/facebook" className="btn other">
+        <Link to="/login/facebook" className="btn other">
           <FacebookRoundedIcon />
           <span className="text">Authorize via Facebook</span>
         </Link>
