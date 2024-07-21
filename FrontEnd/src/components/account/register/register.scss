@@ -6,7 +6,7 @@
   .reg-container {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 320px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -56,7 +56,7 @@
     font-weight: bold;
     border-radius: 30px;
     padding: 10px;
-    transition: 0.2s;
+    transition: 0.1s;
   }
 
   .next {
