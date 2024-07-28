@@ -51,9 +51,9 @@ const MenuDownloadIcon = ({ size }) => {
         </svg>
     )
 }
-const BackdIcon = ({ size }) => {
+const BackdIcon = ({ size, color }) => {
     return(
-        <svg role="img" height="22" width="22" class="Svg-sc-1bi12j5-0 hDgDGI IYDlXmBmmUKHveMzIPCF" viewBox="0 0 24 24"><path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z" fill="currentColor"></path>
+        <svg role="img" height="22" width="22" class="Svg-sc-1bi12j5-0 hDgDGI IYDlXmBmmUKHveMzIPCF" viewBox="0 0 24 24"><path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z" fill={color}></path>
         </svg>
     )
 }
@@ -190,7 +190,7 @@ const PlayerPauseIcon = ({ size }) => {
     )
 }
 
-const Icon = ({name, size = 24}) => {
+const Icon = ({name, size = 24, color}) => {
     const icons = {
         home : HomeIcon,
         search: SearchIcon,
@@ -227,7 +227,7 @@ const Icon = ({name, size = 24}) => {
     }
 
     const Component = icons[name]
-    return <Component size={size} />
+    return <Component size={size} color={color} />
 }
 export{
     Icon
