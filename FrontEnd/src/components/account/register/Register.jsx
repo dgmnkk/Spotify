@@ -9,82 +9,53 @@ import "./register.scss";
 
 export default function Register() {
   const logo = SLogo;
-  const emailInput = document.getElementById("email");
-  const passwordInput = document.getElementById("password");
-  const message = document.getElementById("alertMessage");
 
-  const [isNextClicked, setNext] = useState(false);
-  const [isNextClicked2, setNext2] = useState(false);
+  const [step1, setStep1] = useState(true);
+  const [step2, setStep2] = useState(null);
+  const [step3, setStep3] = useState(null);
 
   const checkEmail = () => {
     if (document.getElementById("email").value !== "") {
-      setNext(true);
+      setStep1(false);
+      setStep2(true);
     } else {
-      emailInput.classList.add("email-alert-brd");
-      message.classList.remove("hide");
+      alert("Email cannot be empty. Example: name@domain.com");
     }
   };
 
   const checkPassword = () => {
     if (document.getElementById("password").value !== "") {
-      setNext2(true);
+      setStep2(false);
+      setStep3(true);
     } else {
-      passwordInput.classList.add("password-alert-brd");
-      message.classList.remove("hide");
+      alert("Password cannot be empty.");
     }
   };
 
-  const stepOut = () => {
-    setNext(false);
+  const checkData = () => {
+    if (document.getElementById("password").value !== "") {
+      setStep3(false);
+      setStep3(true);
+    } else {
+      alert("Password cannot be empty.");
+    }
+  };
+
+  const step2Out = () => {
+    setStep2(false);
+    setStep1(true);
+  };
+
+  const step3Out = () => {
+    setStep3(false);
+    setStep2(true);
   };
 
   return (
     <div className="register">
       <div className="reg-container">
         <img src={logo} alt="logo" />
-        {isNextClicked ? (
-          <>
-            <div className="progress-brd">
-              <div className="progress-perc"></div>
-            </div>
-            <div className="reg-progress-info">
-              <button
-                onClick={() => {
-                  stepOut();
-                }}
-                className="back-btn"
-              >
-                <Icon name="back" color="lightgray" />
-              </button>
-              <div className="info">
-                <div className="step">Step 1 in 3</div>
-                <div className="step-info">Create password</div>
-              </div>
-            </div>
-            <label htmlFor="password" className="password-text">
-              Password
-            </label>
-            <div className="password">
-              <input
-                id="password"
-                name="password"
-                type="password"
-                className="password-input"
-              />
-              <label className="alert hide" id="alertMessage">
-                The password cannot be empty.
-              </label>
-            </div>
-            <button
-              onClick={() => {
-                checkPassword();
-              }}
-              className="btn next stepf"
-            >
-              Next
-            </button>
-          </>
-        ) : (
+        {step1 ? (
           <>
             <div className="title">Sign up to start listening</div>
             <label htmlFor="email" className="email-text">
@@ -98,10 +69,6 @@ export default function Register() {
                 className="email-input"
                 placeholder="name@domain.com"
               />
-              <label className="alert hide" id="alertMessage">
-                The email address is invalid.{" "}
-                <div>Use the example@email.com format</div>
-              </label>
             </div>
             <button
               onClick={() => {
@@ -135,6 +102,118 @@ export default function Register() {
               <span className="text">.</span>
             </div>
           </>
+        ) : (
+          <></>
+        )}
+
+        {step2 ? (
+          <>
+            <div className="progress-brd">
+              <div className="progress-perc33"></div>
+            </div>
+            <div className="reg-progress-info">
+              <button
+                onClick={() => {
+                  step2Out();
+                }}
+                className="back-btn"
+              >
+                <Icon name="back" color="lightgray" />
+              </button>
+              <div className="info">
+                <div className="step">Step 1 in 3</div>
+                <div className="step-info">Create password</div>
+              </div>
+            </div>
+            <label htmlFor="password" className="password-text">
+              Password
+            </label>
+            <div className="password">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                className="password-input"
+              />
+            </div>
+            <button
+              onClick={() => {
+                checkPassword();
+              }}
+              className="btn next stepf"
+            >
+              Next
+            </button>
+          </>
+        ) : (
+          <></>
+        )}
+
+        {step3 ? (
+          <>
+            <div className="progress-brd">
+              <div className="progress-perc67"></div>
+            </div>
+            <div className="reg-progress-info">
+              <button
+                onClick={() => {
+                  step3Out();
+                }}
+                className="back-btn"
+              >
+                <Icon name="back" color="lightgray" />
+              </button>
+              <div className="info">
+                <div className="step">Step 2 in 3</div>
+                <div className="step-info">Tell about yourself</div>
+              </div>
+            </div>
+            <form>
+              <label className="label-text">Name</label>
+              <input id="name" type="text" className="input" />
+
+              <label className="label-text">Date of birth</label>
+              <input className="input date" type="date" />
+
+              <label className="label-text">Sex</label>
+              <label className="input-container">
+                Male
+                <input type="radio" name="sex" value="male" />
+                <span className="checkmark"></span>
+              </label>
+              <label className="input-container">
+                Female
+                <input type="radio" name="sex" value="female" />
+                <span className="checkmark"></span>
+              </label>
+              <label className="input-container">
+                Non-binary
+                <input type="radio" name="sex" value="nonbinary" />
+                <span className="checkmark"></span>
+              </label>
+              <label className="input-container">
+                Other
+                <input type="radio" name="sex" value="other" />
+                <span className="checkmark"></span>
+              </label>
+              <label className="input-container">
+                Don't want to specify
+                <input type="radio" name="sex" value="unknown" />
+                <span className="checkmark"></span>
+              </label>
+
+            </form>
+            <button
+              onClick={() => {
+                checkData();
+              }}
+              className="btn next in-form"
+            >
+              Next
+            </button>
+          </>
+        ) : (
+          <></>
         )}
       </div>
     </div>

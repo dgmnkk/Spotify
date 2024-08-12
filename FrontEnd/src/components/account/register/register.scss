@@ -47,29 +47,14 @@
       height: 44px;
       padding: 0 10px;
       transition: 0.15s;
-  
+
       &:hover {
         border: 1px solid lightgray;
       }
-  
+
       &::placeholder {
         color: gray;
       }
-    }
-
-    .email-alert-brd {
-      border: 1px solid #e91429;
-    }
-
-    .alert {
-      margin-top: 5px;
-      color: #e35e5e;
-      transition: 0.2s;
-      font-size: 14px;
-    }
-
-    .hide {
-      display: none;
     }
   }
 
@@ -153,17 +138,55 @@
   .progress-brd {
     margin-top: 20px;
     background-color: gray;
-    
+
     @keyframes progress-fin-33 {
-      from { width: 0; }
-      to { width: 33%; }
+      from {
+        width: 0;
+      }
+      to {
+        width: 33%;
+      }
     }
 
-    .progress-perc {
+    @keyframes progress-fin-67 {
+      from {
+        width: 33%;
+      }
+      to {
+        width: 67%;
+      }
+    }
+
+    @keyframes progress-fin-100 {
+      from {
+        width: 67%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .progress-perc33 {
       background-color: var(--accent-color);
       height: 2px;
       width: 33%;
       animation-name: progress-fin-33;
+      animation-duration: 1s;
+    }
+
+    .progress-perc67 {
+      background-color: var(--accent-color);
+      height: 2px;
+      width: 67%;
+      animation-name: progress-fin-67;
+      animation-duration: 1s;
+    }
+
+    .progress-perc100 {
+      background-color: var(--accent-color);
+      height: 2px;
+      width: 100%;
+      animation-name: progress-fin-100;
       animation-duration: 1s;
     }
   }
@@ -172,7 +195,7 @@
     display: flex;
     align-items: center;
     padding-top: 10px;
-    
+
     .back-btn {
       left: 0;
       padding: 20px;
@@ -213,31 +236,114 @@
       height: 44px;
       padding: 0 10px;
       transition: 0.15s;
-  
+
       &:hover {
         border: 1px solid lightgray;
       }
-  
+
+      &::placeholder {
+        color: gray;
+      }
+    }
+  }
+
+  form {
+    margin-left: 62px;
+    margin-right: 62px;
+
+    .label-text {
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 7px;
+      display: block;
+    }
+
+    .input {
+      flex-grow: 1;
+      background-color: transparent;
+      color: white;
+      border: 1px solid gray;
+      border-radius: 5px;
+      height: 44px;
+      width: 100%;
+      padding: 0 10px;
+      transition: 0.15s;
+
+      &:hover {
+        border: 1px solid lightgray;
+      }
+
       &::placeholder {
         color: gray;
       }
     }
 
-    .password-alert-brd {
-      border: 1px solid #e91429;
-    }
-
-    .alert {
-      margin-top: 5px;
-      color: #e35e5e;
-      transition: 0.2s;
+    .input-container {
+      display: inline-block;
+      position: relative;
+      padding-left: 25px;
+      padding-right: 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
       font-size: 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        background-color: transparent;
+        border: 1px solid #707070;
+        border-radius: 50%;
+
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+      }
+
+      & input:checked ~ .checkmark {
+        background-color: var(--accent-color);
+        border: none;
+      }
+
+      &:hover .checkmark {
+        border: 1px solid var(--accent-color);
+      }
+
+      & input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      & .checkmark:after {
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--background-sec);
+      }
     }
 
-    .hide {
-      display: none;
+    .in-form {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
     }
-  } 
+  }
 
   .stepf {
     margin-left: 62px;
